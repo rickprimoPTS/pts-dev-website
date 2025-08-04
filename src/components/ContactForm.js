@@ -118,7 +118,7 @@ const ContactForm = () => {
     {/* --- Linha 4: Mensagem --- */}
     <div className="form-group full-width">
       <label htmlFor="necessidade">Informe a sua necessidade: *</label>
-      <textarea id="necessidade" name="necessidade" rows="6" placeholder="Deixe uma mensagem contendo o item que gostaria de cotar" value={formData.necessidade} onChange={handleChange}></textarea>
+      <textarea id="necessidade" name="necessidade" rows="6" placeholder="Deixe uma mensagem contendo os detalhes do seu projeto e como podemos te ajudar" value={formData.necessidade} onChange={handleChange}></textarea>
     </div>
 
     {/* --- Linha 5: Checkboxes LGPD --- */}
