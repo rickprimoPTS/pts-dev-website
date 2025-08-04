@@ -6,13 +6,13 @@ import { getFirestore } from "firebase/firestore";
 
 // A sua configuração do Firebase (que você já tinha)
 const firebaseConfig = {
-    apiKey: "AIzaSyCsfQXXc37njdoE87jvBV5sOtLbTEj1tSM",
-    authDomain: "pts-dev-br.firebaseapp.com",
-    projectId: "pts-dev-br",
-    storageBucket: "pts-dev-br.firebasestorage.app",
-    messagingSenderId: "415274624036",
-    appId: "1:415274624036:web:cd02b8bcb9cb96a767e4b1",
-    measurementId: "G-7F8DLRD94X"
+    apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
+  measurementId: process.env.REACT_APP_MEASUREMENT_ID
   };
 
   // Initialize Firebase
