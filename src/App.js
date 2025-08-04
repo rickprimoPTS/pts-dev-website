@@ -16,7 +16,7 @@ function App() {
   const contactEmail = "contato@pts.dev.br";
   const companyName = "PTS DEV";
   const fullCompanyName = "Primo Trade Solutions LTDA";
-  const [vagas, setVagas] = React.useState(5);
+  const vagas = 5;
 
   const handleWhatsAppClick = () => {
     window.open(`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Olá! Vim pelo site da ${companyName} e gostaria de mais informações sobre as soluções de desenvolvimento.`, '_blank');
@@ -134,8 +134,8 @@ function App() {
           <div className="container">
             <p>© 2025 {companyName}. Todos os direitos reservados.</p>
             <div className="bottom-links">
-              <a href="#">Política de Privacidade</a>
-              <a href="#">Termos de Uso</a>
+              <a href="/politica-de-privacidade">Política de Privacidade</a>
+              <a href="/termos-de-uso">Termos de Uso</a>
             </div>
           </div>
         </div>
