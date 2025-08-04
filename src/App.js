@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import ContactForm from './components/ContactForm';
 import logo from './assets/logo.png';
 
 // --- ÍCONES ---
@@ -104,6 +105,7 @@ function App() {
             </button>
           </div>
         </section>
+        <ContactForm /> {/* ADICIONE ESTA LINHA */}
       </main>
 
       <footer className="main-footer">
