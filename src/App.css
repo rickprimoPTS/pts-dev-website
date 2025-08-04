@@ -277,6 +277,26 @@ body {
 
 /* --- Media Queries para Responsividade --- */
 @media (max-width: 768px) {
+  /* Regras do Header */
+  .main-header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main-header nav {
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main-header nav a {
+    margin: 5px 0;
+  }
+  .cta-button {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Regras do Rodapé */
   .main-footer .container {
     grid-template-columns: 1fr;
     text-align: center;
@@ -286,26 +306,5 @@ body {
   }
   .bottom-links {
     margin-top: 10px;
-  }/* --- Media Queries para Responsividade --- */
-@media (max-width: 768px) {
-  .main-header .container {
-    flex-direction: column; /* Coloca logo e navegação em colunas */
-    align-items: flex-start; /* Alinha à esquerda em telas menores */
-  }
-
-  .main-header nav {
-    margin-top: 10px;
-    flex-direction: column; /* Coloca os links em coluna */
-    align-items: flex-start;
-  }
-
-  .main-header nav a {
-    margin: 5px 0;
-  }
-}
-  .cta-button {
-    margin-top: 10px;
-    width: 100%; /* O botão ocupa a largura total */
-    text-align: center;
   }
 }
