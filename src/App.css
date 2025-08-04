@@ -36,7 +36,6 @@ body {
 
 .main-header .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -45,6 +44,7 @@ body {
 }
 
 .main-header .container nav {
+  margin-left: auto; /* Adicione esta linha */
   display: flex;
   align-items: center; /* Alinha os itens verticalmente */
 }
