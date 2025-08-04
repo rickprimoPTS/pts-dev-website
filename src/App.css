@@ -32,9 +32,6 @@ body {
   background: var(--white-color);
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
 
 .main-header .container {
