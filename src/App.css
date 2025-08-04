@@ -37,6 +37,7 @@ body {
 .main-header .container {
   display: flex;
   align-items: center;
+  justify-content: space-between; /* Adicione esta linha */
 }
 
 .logo-image {
@@ -44,7 +45,6 @@ body {
 }
 
 .main-header .container nav {
-  margin-left: auto; /* Adicione esta linha */
   display: flex;
   align-items: center; /* Alinha os itens verticalmente */
 }
