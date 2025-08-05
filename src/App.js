@@ -191,7 +191,7 @@ function App() {
         <div className="container">
           <div className="footer-about">
             <img src={logo} alt="PLogo da PTS DEV - Empresa de Desenvolvimento de Software" className="logo-image-footer" />
-            <p>Uma divisão de desenvolvimento e tecnologia da {fullCompanyName}. Construindo o futuro do comércio com soluções inovadoras.</p>
+            <p>PTS DEV é Uma divisão de desenvolvimento e tecnologia da {fullCompanyName}. Construindo o futuro do comércio com soluções inovadoras.</p>
             <p><strong>Contato Imediato (WhatsApp):</strong> +55 11 9 7721-1739</p>
             <p><strong>E-mail:</strong> <a href={`mailto:${contactEmail}`}>{contactEmail}</a></p>
           </div>
