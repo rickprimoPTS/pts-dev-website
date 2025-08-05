@@ -140,14 +140,11 @@ function App() {
               <ConsultingIcon />
               <h3>RPA (Automação de Processos)</h3>
               <p>
-                <strong>Libere sua equipe para o que realmente importa.</strong> Cansado de tarefas repetitivas e demoradas? Nossa solução de <strong>RPA</strong> cria robôs virtuais que executam processos burocráticos de forma autônoma, 24 horas por dia, 7 dias por semana. De planilhas a relatórios, nossa <strong>automação robótica</strong> garante precisão total, eliminando erros manuais e desperdício de tempo.
-              </p>
-              <p>
-                <strong>Seus concorrentes já estão automatizando. Não fique para trás.</strong> O <strong>mercado de automação no Brasil</strong> está crescendo exponencialmente, e as empresas que investem em <strong>eficiência operacional</strong> saem na frente. Nossos especialistas em <strong>RPA</strong> analisam os fluxos de trabalho da sua empresa para identificar o maior potencial de economia e implementar a solução ideal, com foco em <strong>redução de custos</strong> e <strong>produtividade</strong>.
-              </p>
-              <p>
-                <strong>Aja agora e garanta a vantagem competitiva.</strong> Comece sua <strong>transformação digital</strong> hoje. Fale com um de nossos consultores para uma <strong>avaliação gratuita</strong> do potencial de <strong>automação</strong> na sua empresa. É a sua chance de otimizar processos e focar no crescimento estratégico.
-              </p>
+                <strong>Libere sua equipe para o que realmente importa.</strong> Cansado de tarefas repetitivas e demoradas? Nossa solução de <strong>RPA</strong> cria robôs virtuais que executam processos burocráticos de forma autônoma, 24 horas por dia, 7 dias por semana. De planilhas a relatórios, nossa <strong>automação robótica</strong> garante precisão total, eliminando erros manuais e desperdício de tempo.</p>
+              <p>
+                <strong>Seus concorrentes já estão automatizando. Não fique para trás.</strong> O <strong>mercado de automação no Brasil</strong> está crescendo exponencialmente, e as empresas que investem em <strong>eficiência operacional</strong> saem na frente. Nossos especialistas em <strong>RPA</strong> analisam os fluxos de trabalho da sua empresa para identificar o maior potencial de economia e implementar a solução ideal, com foco em <strong>redução de custos</strong> e <strong>produtividade</strong>.</p>
+              <p>
+                <strong>Aja agora e garanta a vantagem competitiva.</strong> Comece sua <strong>transformação digital</strong> hoje. Fale com um de nossos consultores para uma <strong>avaliação gratuita</strong> do potencial de <strong>automação</strong> na sua empresa. É a sua chance de otimizar processos e focar no crescimento estratégico.</p>
               <button onClick={scrollToForm} className="solution-cta">Quero automatizar meus processos</button>
             </div>
           </div>
