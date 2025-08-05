@@ -31,7 +31,7 @@ function App() {
           <nav>
             <a href="#solutions">Soluções</a>
             <a href="#about">Sobre Nós</a>
-            <a href="#contact" className="cta-button">Fale com um Especialista</a>
+            <a href="#contact" className="cta-button">Fale conosco</a>
           </nav>
         </div>
       </header>
