@@ -171,6 +171,93 @@ body {
     color: var(--dark-color);
 }
 
+.solution-detailed-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.solution-detailed-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.solution-image-container {
+  flex: 1;
+}
+
+.solution-image-container img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.solution-text-container {
+  flex: 1;
+}
+
+.solution-text-container svg {
+  color: var(--primary-color);
+  width: 32px;
+  height: 32px;
+  margin-bottom: 1rem;
+}
+
+.solution-text-container h3 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+/* --- Seção Sobre Nós --- */
+.about-section {
+  padding: 80px 0;
+  background-color: var(--white-color);
+  text-align: center;
+}
+
+.about-section p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.solution-text-container p {
+  line-height: 1.7;
+}
+.hero-statistic {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--secondary-color);
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+
+.solution-cta {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.solution-cta:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+@media (max-width: 900px) {
+  .solution-detailed-item,
+  .solution-detailed-item.reverse {
+    flex-direction: column;
+  }
+}
+
 /* --- Seção de Escassez --- */
 .scarcity-section {
     background-color: var(--primary-color);
