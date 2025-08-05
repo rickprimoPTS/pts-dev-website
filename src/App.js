@@ -8,12 +8,9 @@ import webAppImg from './assets/web-app.jpg'; // Adicione esta linha
 
 // --- ÍCONES ---
 
-const SoftwareIcon = () => <svg height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 11a9 9 0 0 1 9 9" /><path d="M4 4a16 16 0 0 1 16 16" /><circle cx="5" cy="19" r="1" /></svg>;
+
 const AppIcon = () => <svg height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>;
-// NOVO ÍCONE PARA RPA (AUTOMAÇÃO)
-const RpaIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 14H9"/><path d="M15 14H16"/><path d="M12 8V4H8V8H12Z"/></svg>;
 const ConsultingIcon = () => <svg height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg>;
-const MaintenanceIcon = () => <svg height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>;
 const PlatformIcon = () => <svg height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>;
 
 function App() {
@@ -132,35 +129,7 @@ function App() {
             </div>
           </div>
             
-            {/* GRADE DE SOLUÇÕES ATUALIZADA COM 5 ITENS */}
-            <div className="solutions-grid">
-              <div className="solution-card">
-                <SoftwareIcon />
-                <h3>Desenvolvimento de Sistemas de Gestão (ERP/CRM)</h3>
-                <p>Centralize suas operações, automatize tarefas e tenha uma visão 360° do seu negócio.</p>
-              </div>
-              <div className="solution-card">
-                <AppIcon />
-                <h3>Criação de Aplicativos Comerciais (Android/iOS)</h3>
-                <p>Fidelize clientes e expanda suas vendas com um aplicativo próprio para sua loja ou serviço.</p>
-              </div>
-              {/* NOVO CARD DE AUTOMAÇÃO (RPA) */}
-              <div className="solution-card">
-                <RpaIcon />
-                <h3>Automação de Processos (RPA)</h3>
-                <p>Elimine tarefas manuais repetitivas e libere sua equipe para focar no que realmente importa.</p>
-              </div>
-              <div className="solution-card">
-                <ConsultingIcon />
-                <h3>Consultoria em Gestão e Tecnologia</h3>
-                <p>Nossa expertise para otimizar seus processos e garantir que a tecnologia trabalhe a seu favor.</p>
-              </div>
-              <div className="solution-card">
-                <MaintenanceIcon />
-                <h3>Manutenção e Suporte Especializado</h3>
-                <p>Garantimos que seus sistemas e equipamentos operem sempre com máxima performance.</p>
-              </div>
-            </div>
+            
           </div>
         </section>
 

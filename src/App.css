@@ -138,38 +138,6 @@ body {
   margin: 0 auto 4rem;
 }
 
-/* AJUSTE NA GRADE PARA 5 ITENS */
-.solutions-grid {
-  display: grid;
-  /* Isso criará 3 colunas em telas maiores e 2 em telas médias, ajustando-se bem */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-}
-
-.solution-card {
-  background: var(--white-color);
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-top: 4px solid var(--primary-color);
-}
-.solution-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
-}
-.solution-card svg {
-    color: var(--primary-color);
-    width: 48px;
-    height: 48px;
-    margin-bottom: 1rem;
-}
-.solution-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-    color: var(--dark-color);
-}
 
 .solution-detailed-item {
   display: flex;
