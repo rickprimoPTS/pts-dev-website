@@ -20,7 +20,7 @@ function App() {
   const contactEmail = "contato@pts.dev.br";
   const companyName = "PTS DEV";
   const fullCompanyName = "Primo Trade Solutions LTDA";
-  const vagas = 5;
+  
 
   
   const scrollToForm = () => {
@@ -199,7 +199,7 @@ function App() {
             <h4>Navegação</h4>
             <ul>
               <li><a href="#solutions">Soluções</a></li>
-              <li><a href="#">Sobre a PTS DEV</a></li>
+              <li><a href="#about">Sobre a PTS DEV</a></li>
               <li><a href="#contact">Contato</a></li>
             </ul>
           </div>
