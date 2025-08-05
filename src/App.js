@@ -19,9 +19,7 @@ function App() {
   const fullCompanyName = "Primo Trade Solutions LTDA";
   const vagas = 5;
 
-  const handleWhatsAppClick = () => {
-    window.open(`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Olá! Vim pelo site da ${companyName} e gostaria de mais informações sobre as soluções de desenvolvimento.`, '_blank');
-  };
+  
   const scrollToForm = () => {
   const formSection = document.getElementById('contact-form-section');
   if (formSection) {
