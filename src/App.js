@@ -61,7 +61,7 @@ function App() {
   <div className="container">
     <h2 className="section-title">Nós não criamos apenas software. Criamos o futuro do seu negócio.</h2>
     <p>
-      Entendemos os desafios do varejo físico. As longas filas, o controle de estoque, a dificuldade de alcançar novos clientes. É por isso que a PTS DEV existe. Nossa missão é pegar o melhor dos dois mundos - a conveniência do online com a experiência da loja física - e criar uma solução integrada que funciona para você. Somos mais do que desenvolvedores; somos seus parceiros na jornada de transformação digital.
+      Entendemos os desafios do varejo físico, como as longas filas e o controle de estoque, mas também os desafios de <strong>escritórios e empresas de serviços</strong>, como <strong>tarefas administrativas repetitivas</strong> e a necessidade de <strong>agilidade na gestão</strong>. É por isso que a PTS DEV existe. Nossa missão é pegar o melhor dos dois mundos - a conveniência do online e a eficiência da <strong>automação</strong> - para criar soluções integradas que funcionam para você. Somos mais do que desenvolvedores; somos seus parceiros na jornada de <strong>transformação digital</strong> e <strong>otimização de processos</strong>.
     </p>
   </div>
 </section>
