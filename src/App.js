@@ -22,6 +22,12 @@ function App() {
   const handleWhatsAppClick = () => {
     window.open(`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Olá! Vim pelo site da ${companyName} e gostaria de mais informações sobre as soluções de desenvolvimento.`, '_blank');
   };
+  const scrollToForm = () => {
+  const formSection = document.getElementById('contact-form-section');
+  if (formSection) {
+    formSection.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 
   return (
     <div className="App">
@@ -42,9 +48,9 @@ function App() {
             <h1>Sua empresa está preparada para o futuro digital?</h1>
             <h2>A concorrência não vai esperar. Nós criamos as ferramentas para você vencer.</h2>
             <p>Desenvolvemos soluções em software e aplicativos sob medida que impulsionam o comércio e colocam seu negócio à frente no mercado.</p>
-            <button onClick={handleWhatsAppClick} className="hero-cta-button">
+            <button onClick={scrollToForm} className="hero-cta-button">
               <WhatsAppIcon />
-              Quero uma Consultoria Gratuita Agora
+              Preencher Formulário de Contato
             </button>
           </div>
         </section>
@@ -99,9 +105,9 @@ function App() {
           <div className="container">
             <h2>Imagine seu negócio operando com 100% de eficiência.</h2>
             <p>Chega de sistemas genéricos que não entendem sua necessidade. Empresas de toda a região já confiam na {fullCompanyName} para impulsionar seus resultados. Fale agora com um de nossos especialistas e dê o primeiro passo para a transformação digital definitiva.</p>
-            <button onClick={handleWhatsAppClick} className="hero-cta-button">
+            <button onClick={scrollToForm} className="hero-cta-button">
               <WhatsAppIcon />
-              Falar com um Especialista via WhatsApp
+              Preencher Formulário de Contato
             </button>
           </div>
         </section>
