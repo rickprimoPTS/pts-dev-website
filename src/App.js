@@ -6,6 +6,9 @@ import vitrineOnlineImg from './assets/vitrine-online.jpg'; // Adicione esta lin
 import deliveryAppImg from './assets/delivery-app.jpg';
 import webAppImg from './assets/web-app.jpg'; // Adicione esta linha
 import rpaImg from './assets/rpa.jpg'; // Adicione esta linha
+import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
+import Termos from './pages/Termos';
+import Privacidade from './pages/Privacidade';
 
 // --- ÍCONES ---
 
@@ -14,29 +17,34 @@ const AppIcon = () => <svg height="24" viewBox="0 0 24 24" fill="none" stroke="c
 const ConsultingIcon = () => <svg height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg>;
 const PlatformIcon = () => <svg height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>;
 
-function App() {
+const Home = () => {
+  // Esta função agora contém todo o conteúdo da sua página inicial
   const contactEmail = "contato@pts.dev.br";
   const companyName = "PTS DEV";
   const fullCompanyName = "Primo Trade Solutions LTDA";
-  
 
-  
   const scrollToForm = () => {
-  const formSection = document.getElementById('contact-form-section');
-  if (formSection) {
-    formSection.scrollIntoView({ behavior: 'smooth' });
-  }
-};
+    const formSection = document.getElementById('contact-form-section');
+    if (formSection) {
+      formSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
-    <div className="App">
+    <>
       <header className="main-header">
         <div className="container">
-          <img src={logo} alt="Logo da Primo Trade Solutions - Desenvolvimento de Apps" className="logo-image" />
+          <Link to="/"><img src={logo} alt="Logo da Primo Trade Solutions - Desenvolvimento de Apps" className="logo-image" /></Link>
           <nav>
-            <a href="#solutions">Soluções</a>
-            <a href="#about">Sobre Nós</a>
-            <a href="#contact" className="cta-button">Fale conosco</a>
+            <div className="nav-dropdown">
+              <Link to="/" className="nav-link">Página Inicial</Link>
+              <div className="dropdown-content">
+                <Link to="/termos-e-condicoes">Termos e Condições</Link>
+                <Link to="/politica-de-privacidade">Política de Privacidade</Link>
+              </div>
+            </div>
+            <a href="#solutions" onClick={(e) => { e.preventDefault(); document.getElementById('solutions')?.scrollIntoView({ behavior: 'smooth' }); }} className="nav-link">Soluções</a>
+            <a href="#about" onClick={(e) => { e.preventDefault(); document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }); }} className="nav-link">Sobre Nós</a>
           </nav>
         </div>
       </header>
@@ -74,11 +82,12 @@ function App() {
             {/* PRODUTO 1: SISTEMA DE GESTÃO E VITRINE ONLINE */}
           <div className="solution-detailed-item">
             <div className="solution-image-container">
+              
               {/* Substitua por uma imagem real do seu sistema de gestão */}
               <img src={vitrineOnlineImg} alt="Ilustração mostrando a conexão entre a loja física e a vitrine online para gestão de pedidos" />
             </div>
             <div className="solution-text-container">
-              <PlatformIcon />
+              
               <h3>Sistema de Gestão com Vitrine Online Integrada</h3>
               <p>
                 <strong>Assuma o controle total da sua operação.</strong> Nossa plataforma de gestão (ERP) foi desenhada para o comércio local, permitindo que você gerencie produtos, estoque, e vendas internas de forma intuitiva e 100% online. Acesse seus dados em tempo real, de qualquer lugar, e tome decisões baseadas em informações precisas.
@@ -203,13 +212,25 @@ function App() {
           <div className="container">
             <p>© 2025 {companyName}. Todos os direitos reservados.</p>
             <div className="bottom-links">
-              <a href="/politica-de-privacidade">Política de Privacidade</a>
-              <a href="/termos-de-uso">Termos de Uso</a>
-            </div>
+          <Link to="/politica-de-privacidade">Política de Privacidade</Link>
+          <Link to="/termos-e-condicoes">Termos e Condições</Link>
+        </div>
           </div>
         </div>
       </footer>
-    </div>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/termos-e-condicoes" element={<Termos />} />
+        <Route path="/politica-de-privacidade" element={<Privacidade />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
