@@ -6,6 +6,14 @@
   line-height: 1.8;
   color: #333;
 }
+/* Adicionar em src/pages/pages.css */
+.post-content h2, .post-content h3 {
+  margin-top: 40px;
+}
+.post-content a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
 
 .legal-container h1 { font-size: 2.2rem; margin-bottom: 20px; }
 .legal-container h2 { font-size: 1.6rem; margin-top: 40px; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 5px; }

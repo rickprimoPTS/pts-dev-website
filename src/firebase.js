@@ -3,6 +3,9 @@
 // Importa as funções que precisamos da biblioteca que instalamos
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import { getFunctions } from "firebase/functions";
+ 
+
 
 // A sua configuração do Firebase (que você já tinha)
 const firebaseConfig = {
@@ -18,3 +21,6 @@ const firebaseConfig = {
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
+export const functions = getFunctions(app, 'southamerica-east1'); // <-- ADICIONADO
+// Nota: 'southamerica-east1' é a região de São Paulo. Isso garante que o app
+// converse com a função na região mais próxima, diminuindo a latência.

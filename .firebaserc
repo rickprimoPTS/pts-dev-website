@@ -1,5 +1,7 @@
 {
   "projects": {
     "default": "pts-dev-br"
-  }
+  },
+  "targets": {},
+  "etags": {}
 }
