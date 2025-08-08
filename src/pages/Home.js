@@ -23,6 +23,7 @@ const Home = () => {
   };
 
   return (
+    // O <> de fragmento é usado pois este componente retorna múltiplos elementos de nível superior
     <>
       <section className="hero-section">
         <div className="container">
@@ -50,49 +51,60 @@ const Home = () => {
           <h2 className="section-title">Desenvolvimento de Software Sob Medida para Digitalizar e Automatizar seu Comércio</h2>
           <p className="section-subtitle">Construímos as ferramentas que integram sua operação, da gestão interna à entrega final.</p>
           
+          {/* PRODUTO 4: RPA */}
           <div className="solution-detailed-item">
             <div className="solution-image-container">
-              <img src={rpaImg} alt="Automação de processos com RPA" />
+              <img src={rpaImg} alt="Robôs de software executando automação de processos (RPA)" />
             </div>
             <div className="solution-text-container">
               <ConsultingIcon />
               <h3>RPA (Automação de Processos)</h3>
-              <p><strong>Libere sua equipe para o que realmente importa.</strong> Cansado de tarefas repetitivas e demoradas? Nossa solução de <strong>RPA</strong> cria robôs virtuais que executam processos burocráticos de forma autônoma, 24 horas por dia, 7 dias por semana.</p>
+              <p><strong>Libere sua equipe para o que realmente importa.</strong> Cansado de tarefas repetitivas e demoradas? Nossa solução de <strong>RPA</strong> cria robôs virtuais que executam processos burocráticos de forma autônoma, 24 horas por dia, 7 dias por semana. De planilhas a relatórios, nossa <strong>automação robótica</strong> garante precisão total, eliminando erros manuais e desperdício de tempo.</p>
+              <p><strong>Seus concorrentes já estão automatizando. Não fique para trás.</strong> O <strong>mercado de automação no Brasil</strong> está crescendo exponencialmente, e as empresas que investem em <strong>eficiência operacional</strong> saem na frente. Nossos especialistas em <strong>RPA</strong> analisam os fluxos de trabalho da sua empresa para identificar o maior potencial de economia e implementar a solução ideal, com foco em <strong>redução de custos</strong> e <strong>produtividade</strong>.</p>
+              <p><strong>Aja agora e garanta a vantagem competitiva.</strong> Comece sua <strong>transformação digital</strong> hoje. Fale com um de nossos consultores para uma <strong>avaliação gratuita</strong> do potencial de <strong>automação</strong> na sua empresa. É a sua chance de otimizar processos e focar no crescimento estratégico.</p>
               <button onClick={scrollToForm} className="solution-cta">Quero automatizar meus processos</button>
             </div>
           </div>
 
+          {/* PRODUTO 1: SISTEMA DE GESTÃO E VITRINE ONLINE */}
           <div className="solution-detailed-item">
             <div className="solution-image-container">
-              <img src={vitrineOnlineImg} alt="Sistema de gestão com vitrine online" />
+              <img src={vitrineOnlineImg} alt="Ilustração mostrando a conexão entre a loja física e a vitrine online para gestão de pedidos" />
             </div>
             <div className="solution-text-container">
               <h3>Sistema de Gestão com Vitrine Online Integrada</h3>
-              <p><strong>Assuma o controle total da sua operação.</strong> Nossa plataforma de gestão (ERP) foi desenhada para o comércio local, permitindo que você gerencie produtos, estoque, e vendas internas de forma intuitiva e 100% online.</p>
+              <p><strong>Assuma o controle total da sua operação.</strong> Nossa plataforma de gestão (ERP) foi desenhada para o comércio local, permitindo que você gerencie produtos, estoque, e vendas internas de forma intuitiva e 100% online. Acesse seus dados em tempo real, de qualquer lugar, e tome decisões baseadas em informações precisas.</p>
+              <p><strong>Abra sua loja para o mundo digital.</strong> Integrada ao sistema de gestão, criamos uma vitrine online (e-commerce) para seus clientes. Eles podem fazer pedidos para retirada, serem notificados automaticamente quando estiver pronto e pagar online. É a experiência de compra moderna que seus clientes esperam, conectada perfeitamente ao seu estoque.</p>
+              <p>Reduza custos operacionais e aumente seu alcance, vendendo para clientes muito além do seu bairro, 24 horas por dia, 7 dias por semana.</p>
               <button onClick={scrollToForm} className="solution-cta">Quero para minha loja</button>
             </div>
           </div>
 
+          {/* PRODUTO 2: APLICATIVO DE ENTREGAS */}
           <div className="solution-detailed-item reverse">
             <div className="solution-text-container">
               <AppIcon />
               <h3>Aplicativo de Entregas (Delivery App)</h3>
-              <p><strong>Crie seu próprio ecossistema de delivery.</strong> Conecte suas lojas a uma rede de entregadores independentes sem depender de taxas abusivas de aplicativos de terceiros.</p>
+              <p><strong>Crie seu próprio ecossistema de delivery.</strong> Conecte suas lojas a uma rede de entregadores independentes sem depender de taxas abusivas de aplicativos de terceiros. Nossa plataforma de logística gerencia o fluxo completo: entregadores se cadastram, aceitam corridas e o sistema traça a rota ideal em tempo real.</p>
+              <p><strong>Transparência e segurança para todos.</strong> Você e seu cliente acompanham cada passo da entrega no mapa. Ao finalizar, o cliente confirma o recebimento, o motoboy dá baixa no app e sua loja registra a entrega automaticamente, com todos os horários e dados para uma análise completa da venda, de ponta a ponta.</p>
+              <p>Ofereça a conveniência máxima aos seus clientes, permitindo que eles comprem de casa e recebam seus produtos sem enfrentar filas ou trânsito.</p>
               <button onClick={scrollToForm} className="solution-cta">Saiba mais sobre a plataforma</button>
             </div>
             <div className="solution-image-container">
-              <img src={deliveryAppImg} alt="Aplicativo de delivery" />
+              <img src={deliveryAppImg} alt="Ilustração de um aplicativo de compras online com entrega por caminhão ou por motoboy" />
             </div>
           </div>
 
+          {/* PRODUTO 3: APLICATIVOS WEBEBASE E MARKETING */}
           <div className="solution-detailed-item">
             <div className="solution-image-container">
-              <img src={webAppImg} alt="Web App de fidelização de clientes" />
+              <img src={webAppImg} alt="Celular mostrando um webapp com ofertas e descontos de uma loja" />
             </div>
             <div className="solution-text-container">
               <ConsultingIcon />
               <h3>Web Apps de Fidelização e Marketing</h3>
-              <p><strong>Converse diretamente com seu cliente, sem intermediários.</strong> Crie um canal de marketing poderoso com aplicativos "web-base" que não exigem download em loja de apps.</p>
+              <p><strong>Converse diretamente com seu cliente, sem intermediários.</strong> Crie um canal de marketing poderoso com aplicativos "web-base" que não exigem download em loja de apps. Com um simples QR Code na sua loja, seu cliente "instala" seu ícone na tela inicial do celular, abrindo uma porta para a fidelização.</p>
+              <p><strong>Transforme dados em lucro.</strong> Envie ofertas e cupons de desconto segmentados com base no comportamento real do seu público. Nossa plataforma analisa tendências de consumo, produtos de interesse e os melhores horários para promoções, permitindo que você crie campanhas de marketing que realmente convertem.</p>
               <button onClick={scrollToForm} className="solution-cta">Quero fidelizar meus clientes</button>
             </div>
           </div>
@@ -100,24 +112,25 @@ const Home = () => {
       </section>
 
       <section className="scarcity-section">
-        <div className="container">
-          <h2 className="section-title">Agenda Exclusiva para Novos Projetos de Software</h2>
-          <p>Para garantir a máxima qualidade e dedicação total, aceitamos um número limitado de novos parceiros a cada mês. Seja um dos poucos a ter acesso à nossa agenda.</p>
-          <div className="scarcity-counter">
-            Poucas vagas por mês. Garanta o seu projeto agora mesmo!
+          <div className="container">
+              <h2 className="section-title">Agenda Exclusiva para Novos Projetos de Software</h2>
+              <p>Para garantir a máxima qualidade e dedicação total, aceitamos um número limitado de novos parceiros a cada mês. Seja um dos poucos a ter acesso à nossa agenda.</p>
+              <button onClick={scrollToForm} className="hero-cta-button" style={{ marginTop: '20px' }}>
+                  Poucas vagas por mês. Garanta o seu projeto agora mesmo!
+              </button>
           </div>
-        </div>
       </section>
 
       <section id="contact" className="final-cta-section">
         <div className="container">
           <h2>Pronto para Ter um Software que Realmente Funciona para Você?</h2>
-          <p>Chega de sistemas genéricos que não entendem sua necessidade. Empresas de toda a região já confiam na {fullCompanyName} para impulsionar seus resultados.</p>
+          <p>Chega de sistemas genéricos que não entendem sua necessidade. Empresas de toda a região já confiam na {fullCompanyName} para impulsionar seus resultados. Fale agora com um de nossos especialistas e dê o primeiro passo para a transformação digital definitiva.</p>
           <button onClick={scrollToForm} className="hero-cta-button">
             Solicite uma Proposta Sem Compromisso
           </button>
         </div>
       </section>
+
       <ContactForm />
     </>
   );
