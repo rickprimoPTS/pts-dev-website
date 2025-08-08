@@ -7,10 +7,9 @@ import webAppImg from '../assets/web-app.jpg';
 import rpaImg from '../assets/rpa.jpg';
 import '../App.css'; // O CSS continua sendo necessário
 
-// Reutilizamos os mesmos ícones do App.js original
+// Adicione estas definições de ícones que foram removidas do App.js
 const AppIcon = () => <svg height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>;
 const ConsultingIcon = () => <svg height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg>;
-
 
 const Home = () => {
   const fullCompanyName = "Primo Trade Solutions LTDA";

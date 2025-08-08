@@ -1,22 +1,21 @@
+// src/App.js
+
 import React from 'react';
 import './App.css';
-import ContactForm from './components/ContactForm';
-import logo from './assets/logo.png';
-import vitrineOnlineImg from './assets/vitrine-online.jpg'; // Adicione esta linha
-import deliveryAppImg from './assets/delivery-app.jpg';
-import webAppImg from './assets/web-app.jpg'; // Adicione esta linha
-import rpaImg from './assets/rpa.jpg'; // Adicione esta linha
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import Termos from './pages/Termos';
-import Home from './pages/Home';
-import Privacidade from './pages/Privacidade';
-// import Chatbot from './components/Chatbot';
-import BlogList from './pages/BlogList';   // <--- ADICIONAR
-import BlogPost from './pages/BlogPost';   // <--- ADICIONAR
-import CategoryPage from './pages/CategoryPage';
-import Header from './components/Header'; // Você vai criar este componente
-import Footer from './components/Footer'; // Você vai criar este componente
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+// Importa os componentes de layout
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+// Importa os componentes de página
+import Home from './pages/Home';
+import Termos from './pages/Termos';
+import Privacidade from './pages/Privacidade';
+import BlogList from './pages/BlogList';
+import BlogPost from './pages/BlogPost';
+import CategoryPage from './pages/CategoryPage';
+// import Chatbot from './components/Chatbot'; // Mantido comentado para uso futuro
 
 function App() {
   return (
